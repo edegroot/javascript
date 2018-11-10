@@ -8,12 +8,12 @@ var joinList = function() {
 	var isValid = true;
 	
 	if (emailAddress1 === "") { 
-		$("email_address1_error").firstChild.nodeValue = "This field is required.";
+		$("email_address1_error").firstChild.nodeValue = "Please enter a valid email address.";
 		isValid = false;
 	} else { $("email_address1_error").firstChild.nodeValue = ""; } 
 
 	if (emailAddress1 !== emailAddress2) { 
-		$("email_address2_error").firstChild.nodeValue = "This entry must equal first entry.";
+		$("email_address2_error").firstChild.nodeValue = "This email must match the first email.";
 		isValid = false;
 	} else { $("email_address2_error").firstChild.nodeValue = ""; }     
         
